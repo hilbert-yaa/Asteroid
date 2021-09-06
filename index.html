@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+.arrowkey {
+  width:18px;
+  text-align:center;
+  border-radius:3px;
+  background-color:lightgray;
+}
+.highlight {
+  background-color:pink;
+}
+.hidden {
+  visibility:hidden;
+}
+  </style>
+</head>
+<body>
+  <svg width="100" height="100" style="background-color:black">
+    <g id="ship" transform="translate(50,50)">
+    <polygon class="hidden" id="leftThrust" points="-2,10 -15,12 -2,14"
+             style="fill:orange">
+    </polygon>
+    <polygon class="hidden" id="rightThrust" points="2,10 15,12 2,14"
+             style="fill:orange">
+    </polygon>
+    <polygon points="-15,-20 15,-20 0,20"
+             style="fill:lime">
+    </polygon>
+    </g>
+</svg>
+<h2>Controls:</h2>
+<table>
+    <!-- <tr><td>Thrust</td><td>Up Arrow</td></tr> -->
+    <tr><td>Turn Left</td><td><div id="leftarrow" class="arrowkey">&#8678;</div></td></tr>
+    <tr><td>Turn Right</td><td><div id="rightarrow" class="arrowkey">&#8680;</div></td></tr>
+    <!-- <tr><td>Fire</td><td>Space</td>
+    <tr><td>Restart Game</td><td>F5</td></tr> -->
+</table>
+</body>
+</html>
